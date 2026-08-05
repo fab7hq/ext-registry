@@ -1,0 +1,38 @@
+name: Extension submission
+description: Propose one immutable extension release for catalog review.
+title: "extension: "
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Public source repository
+      placeholder: https://github.com/owner/extension
+    validations:
+      required: true
+  - type: input
+    id: release
+    attributes:
+      label: Immutable tagged source archive
+      placeholder: https://github.com/owner/extension/releases/download/vX.Y.Z/source.zip
+    validations:
+      required: true
+  - type: input
+    id: digest
+    attributes:
+      label: SHA-256 source digest
+      placeholder: sha256:...
+    validations:
+      required: true
+  - type: textarea
+    id: hosts
+    attributes:
+      label: Supported hosts and validation evidence
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Submission boundary
+      options:
+        - label: I understand catalog inclusion is reviewed discovery metadata, not a correctness or security verdict.
+          required: true

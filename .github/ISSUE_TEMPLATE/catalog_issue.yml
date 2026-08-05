@@ -1,0 +1,24 @@
+name: Catalog defect
+description: Report incorrect registry metadata, validation behavior, or documentation.
+title: "catalog: "
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Extension or catalog field
+      placeholder: denim source.sha256
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed problem
+      description: Include exact sanitized validation output when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected metadata or behavior
+    validations:
+      required: true

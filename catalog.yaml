@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "registry": "fab7hq/ext-registry",
+  "catalog_version": "0.1.0",
+  "extensions": [
+    {
+      "name": "denim",
+      "publisher": "fab7hq",
+      "version": "0.1.0",
+      "fab7_api": 1,
+      "hosts": [
+        "claude",
+        "codex"
+      ],
+      "source": {
+        "url": "https://github.com/fab7hq/denim/releases/download/v0.1.0/denim-0.1.0.source.zip",
+        "sha256": "sha256:d9f43f7e9ccf47f14626c9f1cc67062310ac5169812cadf95b9645627a0cc026"
+      }
+    }
+  ]
+}
